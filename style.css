@@ -1,0 +1,134 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap');
+
+/* Estiles generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsla(0, 0%, 100%, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container{
+    display: flex;
+    max-width: 800px;
+    background-color: aqua;
+    border-radius: 20px;
+    height: 50vh;
+}
+
+.card{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.card img{
+    width: 50px;
+}
+
+.card h2{
+    font-family: "Big Shoulders Display", sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.card p{
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 200;
+    margin-bottom: 60px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.card button{
+    border-style: none;
+    border-radius: 30px;
+    border: 1px solid #fff;
+    padding: 10px 0;
+    width: 70%;
+
+}
+
+.card-orange{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    button{
+        color: hsl(31, 77%, 52%);
+    }
+    button:hover{
+        background-color: hsl(31, 77%, 52%);
+        color: #fff;
+        transition: .5s;
+        cursor: pointer;
+    }
+}
+
+.card-blue{
+    background-color: hsl(184, 100%, 22%);
+    button{
+        color: hsl(184, 100%, 22%);
+    }
+    button:hover{
+        background-color: hsl(184, 100%, 22%);
+        color: #fff;
+        transition: .5s;
+        cursor: pointer;
+    }
+}
+
+.card-green{
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    button{
+        color: hsl(179, 100%, 13%);
+    }
+    button:hover{
+        background-color: hsl(179, 100%, 13%);
+        color: #fff;
+        transition: .5s;
+        cursor: pointer;
+    }
+}
+
+@media (width <= 1000px){
+    .container{
+        width: 90%;
+        height: 40%;
+    }
+
+    .card p{
+        margin: 30px 0;
+    }
+}
+
+@media (width <= 500px){
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        height: 90vh;
+    }
+
+    .card{
+        height: 60%;
+    }
+
+    .card-orange{
+        border-radius: 20px 20px 0 0;
+    }
+
+    .card-green{
+        border-radius: 0 0 20px 20px;
+    }
+}
